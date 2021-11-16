@@ -295,10 +295,6 @@ section.me {
     padding: 80px 0;
     margin-bottom: 150px;
 }
-section.me .title {
-    /* margin-bottom: 50px; */
-    /* background: orange; */
-}
 section.me ul.list {
     width: 74%;
     margin: 50px auto;
@@ -379,4 +375,75 @@ section.me ul.list li ul.in li p::before {
 }
 #incruit-btn:hover {
     background: #f86010;
+}
+
+/* section sns style */
+section.sns {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 50px;
+}
+section.sns .title {
+    margin-bottom: 50px;
+}
+section.sns ul {
+    width: 74%;
+    margin: 0 auto;
+    /* background: skyblue; */
+}
+section.sns ul li {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+section.sns ul li:last-child {
+    margin-right: 0;
+}
+section.sns ul li a .img-box {
+    height: 250px;
+    /* background: blue; */
+    overflow: hidden;
+    position: relative;
+}
+section.sns ul li a .img-box::before {
+    
+    background: rgba(255, 169, 57, 0.4);
+    content: '';
+    display: block; 
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+section.sns ul li a .img-box:hover::before {
+    width: 100%;
+}
+section.sns ul li a .img-box img {
+    width: 100%;
+}
+section.sns ul li a .bottom {
+    padding: 15px 30px;
+}
+
+section.sns ul li a .bottom p.color {
+    color: #ff8342;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+section.sns ul li a .bottom p {
+    line-height: 1.6;
+    font-weight: 700;
+}
+section.sns ul li a .bottom p.time {
+    color: #bbb;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 13px;
+}
+section.sns ul li a .bottom p.time::before {
+    content: '\f017';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    
 }
